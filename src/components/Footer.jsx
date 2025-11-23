@@ -17,7 +17,7 @@ export default function Footer({ darkMode }) {
               </div>
             </div>
             <p className={`text-sm ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>
-              Enterprise-grade IT solutions with startup agility
+              We're a new-generation tech partner built for agility, integrity, and impact.
             </p>
             <div className="flex space-x-4">
             <a
@@ -62,20 +62,20 @@ export default function Footer({ darkMode }) {
           </div>
           </div>
           <div>
+            <h4 className={`font-semibold mb-4 ${darkMode ? 'text-white' : 'text-slate-900'}`}>Quick Links</h4>
+            <ul className="space-y-2 text-sm">
+              <li><a href="#about" className={`hover:text-cyan-500 ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>About Us</a></li>
+              <li><a href="#projects" className={`hover:text-cyan-500 ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>Projects</a></li>
+              <li><a href="#careers" className={`hover:text-cyan-500 ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>Careers</a></li>
+            </ul>
+          </div>
+          <div>
             <h4 className={`font-semibold mb-4 ${darkMode ? 'text-white' : 'text-slate-900'}`}>Services</h4>
             <ul className="space-y-2 text-sm">
               <li><a href="#" className={`hover:text-cyan-500 ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>Software Development</a></li>
               <li><a href="#" className={`hover:text-cyan-500 ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>Cloud Solutions</a></li>
               <li><a href="#" className={`hover:text-cyan-500 ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>AI & Machine Learning</a></li>
               <li><a href="#" className={`hover:text-cyan-500 ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>IT Consulting</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className={`font-semibold mb-4 ${darkMode ? 'text-white' : 'text-slate-900'}`}>Company</h4>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#" className={`hover:text-cyan-500 ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>About Us</a></li>
-              <li><a href="#" className={`hover:text-cyan-500 ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>Projects</a></li>
-              <li><a href="#" className={`hover:text-cyan-500 ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>Careers</a></li>
             </ul>
           </div>
           <div>

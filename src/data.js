@@ -63,21 +63,26 @@ export const testimonials = [
 
 export const team = [
   {
-    name: "John Doe",
-    role: "CEO",
-    bio: "The visionary behind Vision Mentix, driving the company's growth and innovation.",
-    avatar: "https://i.pravatar.cc/150?u=a042581f4e29026705f"
+    name: "Arjun Mehta",
+    role: "Founder & CTO",
+    bio: "10+ years in scalable cloud architecture. Ex-TechLead at a unicorn startup.",
+    avatar: "https://i.pravatar.cc/150?u=a042581f4e29026703f",
+    linkedin: "https://linkedin.com/in/arjun",
+    github: "https://github.com/arjun",
+    email: "arjun@visionmentix.com"
   },
   {
-    name: "Jane Smith",
-    role: "CTO",
-    bio: "The technical mastermind, leading the development of cutting-edge solutions.",
-    avatar: "https://i.pravatar.cc/150?u=a042581f4e29026704c"
+    name: "Priya Sharma",
+    role: "AI/ML Lead",
+    bio: "PhD in ML. Built production models for fintech and healthtech.",
+    avatar: "https://i.pravatar.cc/150?u=a042581f4e29026706c",
+    linkedin: "https://linkedin.com/in/priya"
   },
   {
-    name: "Peter Jones",
-    role: "Lead Developer",
-    bio: "A passionate developer with a knack for solving complex problems.",
-    avatar: "https://i.pravatar.cc/150?u=a042581f4e29026704g"
+    name: "Rohan Desai",
+    role: "Full-Stack Developer",
+    bio: "Passionate about clean code and DevOps. Loves open-source.",
+    avatar: "https://i.pravatar.cc/150?u=a042581f4e29026705b",
+    github: "https://github.com/rohan"
   }
 ];
