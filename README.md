@@ -11,6 +11,9 @@ This is a responsive landing page for Vision Mentix, a software company. This pr
 -   **Dark Mode:** A toggle to switch between light and dark themes.
 -   **Component-Based:** Built with reusable React components.
 -   **Fast and Optimized:** Built with Vite for a fast development experience and optimized production builds.
+-   **Our Works Section:** Showcases a portfolio of completed projects.
+-   **Blog Section:** Provides insights and updates from the team.
+-   **Contact Section:** Includes contact information and a contact form.
 
 ## Tech Stack
 
@@ -72,7 +75,9 @@ In the project directory, you can run:
 │   ├── assets
 │   ├── components
 │   │   ├── About.jsx
+│   │   ├── Blog.jsx
 │   │   ├── CTA.jsx
+│   │   ├── Contact.jsx
 │   │   ├── Footer.jsx
 │   │   ├── Header.jsx
 │   │   ├── Hero.jsx
@@ -80,7 +85,11 @@ In the project directory, you can run:
 │   │   ├── Services.jsx
 │   │   ├── Team.jsx
 │   │   ├── Testimonials.jsx
-│   │   └── WhyUs.jsx
+│   │   ├── WhyUs.jsx
+│   │   └── Works.jsx
+│   ├── pages
+│   │   ├── BlogPage.jsx
+│   │   └── ContactPage.jsx
 │   ├── App.jsx
 │   ├── data.js
 │   ├── index.css
