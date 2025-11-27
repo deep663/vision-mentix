@@ -81,52 +81,58 @@ export default function Header({ darkMode, setDarkMode, mobileMenuOpen, setMobil
             <motion.a
               href="/"
               variants={navItemVariants}
-              whileHover={{ y: -3 }}
               onClick={(e) => {
-              e.preventDefault();
-              scrollToSection('#hero');
-            }}
-              className="text-left bg-transparent border-0 cursor-pointer font-inherit hover:text-cyan-500 transition-colors text-slate-700 dark:text-slate-300"
+                e.preventDefault();
+                scrollToSection('#hero');
+              }}
+              className={`text-left bg-transparent border-0 cursor-pointer font-inherit hover:text-cyan-500 transition-all transform duration-300 hover:-translate-y-1 ${
+                darkMode ? 'text-slate-300' : 'text-slate-700'
+              }`}
             >
               Home
             </motion.a>
             <motion.button
               variants={navItemVariants}
-              whileHover={{ y: -3 }}
               onClick={() => scrollToSection('#about')}
-              className="text-left bg-transparent border-0 cursor-pointer font-inherit hover:text-cyan-500 transition-colors text-slate-700 dark:text-slate-300"
+              className={`text-left bg-transparent border-0 cursor-pointer font-inherit hover:text-cyan-500 transition-all transform duration-300 hover:-translate-y-1 ${
+                darkMode ? 'text-slate-300' : 'text-slate-700'
+              }`}
             >
               About
             </motion.button>
             <motion.button
               variants={navItemVariants}
-              whileHover={{ y: -3 }}
               onClick={() => scrollToSection('#services')}
-              className="text-left bg-transparent border-0 cursor-pointer font-inherit hover:text-cyan-500 transition-colors text-slate-700 dark:text-slate-300"
+              className={`text-left bg-transparent border-0 cursor-pointer font-inherit hover:text-cyan-500 transition-all transform duration-300 hover:-translate-y-1 ${
+                darkMode ? 'text-slate-300' : 'text-slate-700'
+              }`}
             >
               Services
             </motion.button>
             <motion.button
               variants={navItemVariants}
-              whileHover={{ y: -3 }}
               onClick={() => scrollToSection('#works')}
-              className="text-left bg-transparent border-0 cursor-pointer font-inherit hover:text-cyan-500 transition-colors text-slate-700 dark:text-slate-300"
+              className={`text-left bg-transparent border-0 cursor-pointer font-inherit hover:text-cyan-500 transition-all transform duration-300 hover:-translate-y-1 ${
+                darkMode ? 'text-slate-300' : 'text-slate-700'
+              }`}
             >
               Work
             </motion.button>
             <MotionLink
               variants={navItemVariants}
-              whileHover={{ y: -3 }}
               to="/blog"
-              className="hover:text-cyan-500 transition-colors text-slate-700 dark:text-slate-300"
+              className={`text-left bg-transparent border-0 cursor-pointer font-inherit hover:text-cyan-500 transition-all transform duration-300 hover:-translate-y-1  ${
+                darkMode ? 'text-slate-300' : 'text-slate-700'
+              }`}
             >
               Blog
             </MotionLink>
             <MotionLink
               variants={navItemVariants}
-              whileHover={{ y: -3 }}
               to="/contact"
-              className="hover:text-cyan-500 transition-colors text-slate-700 dark:text-slate-300"
+              className={`text-left bg-transparent border-0 cursor-pointer font-inherit hover:text-cyan-500 transition-all transform duration-300 hover:-translate-y-1  ${
+                darkMode ? 'text-slate-300' : 'text-slate-700'
+              }`}
             >
               Contact
             </MotionLink>
@@ -135,17 +141,14 @@ export default function Header({ darkMode, setDarkMode, mobileMenuOpen, setMobil
           <div className="hidden md:flex items-center space-x-4">
             <motion.button
               onClick={() => setDarkMode(!darkMode)}
-              whileHover={{ scale: 1.1 }}
-              className={`p-2 rounded-lg transition-colors ${darkMode ? 'bg-slate-800 hover:bg-slate-700' : 'bg-slate-100 hover:bg-slate-200'}`}
+              className={`p-2 rounded-lg transition-all transform duration-300 hover:scale-110 ${darkMode ? 'bg-slate-800 hover:bg-slate-700' : 'bg-slate-100 hover:bg-slate-200'}`}
             >
               {darkMode ? <Sun className="w-5 h-5 text-cyan-400" /> : <Moon className="w-5 h-5 text-slate-600" />}
             </motion.button>
 
             <MotionLink
               to="/contact"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.98 }}
-              className="group bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-6 py-2 rounded-full font-semibold shadow-md flex items-center gap-2 transition-shadow hover:shadow-lg"
+              className="group bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-6 py-2 rounded-full font-semibold shadow-md flex items-center gap-2 transition-all transform duration-300 hover:scale-105 hover:shadow-lg"
             >
               Let's Connect
               <span className="p-2 rounded-full bg-white transition-colors">
