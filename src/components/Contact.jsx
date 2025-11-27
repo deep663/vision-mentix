@@ -73,8 +73,8 @@ const Contact = ({ darkMode, contact }) => {
             variants={containerVariants}
             className={`space-y-6 p-5 rounded-xl ${
                   darkMode
-                    ? 'bg-slate-800/50 hover:bg-slate-800 border border-slate-700/50 hover:border-cyan-500'
-                    : 'bg-white hover:bg-slate-50 border border-slate-200 hover:border-cyan-500'
+                    ? 'bg-slate-800/20 border border-slate-700/50'
+                    : 'bg-white border border-slate-200'
                 } hover:shadow-md`}
           >
             {[
@@ -139,7 +139,6 @@ const Contact = ({ darkMode, contact }) => {
           {/* Contact Form */}
           <motion.div
             variants={itemVariants}
-            whileHover={{ y: -8 }}
             className={`p-8 rounded-2xl shadow-lg transition-all duration-300 ${
               darkMode
                 ? 'bg-slate-800 border border-slate-700 hover:border-cyan-500'
